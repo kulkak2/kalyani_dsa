@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+func(int n) {
+  static int x = 0;
+  if (n > 0) {
+    x++;
+    return func(n-1)+x;
+  } 
+}
+
+int main() {
+  printf("%d", func(5));
+  return 0;
+}
+
+o/p: 25
+Takeaway: All the function calls use same copy of the static variable.
+Only one copy is created and updated in the code section. This is common section for static and global variables.
