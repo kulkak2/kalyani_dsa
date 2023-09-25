@@ -1,4 +1,19 @@
 If the function is calling itself more than one time, then it is a tree recursion 
+
+void fun (int n ) {
+  if (n > 0) {
+    printf("\n%d", n);
+    fun(n-1);
+    fun(n-1);
+  }
+}
+fun(3);
+
+For following example, time complexity is :
 Total number of function calls are O(2^n)
 = 2^n+1 - 1 Geometric progression 
+Space complexity depends on height of the tree : number of activation records 
+for n = 3, 4 was the height 
 
+Space complexity : O(n)
+ 
