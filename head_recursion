@@ -10,3 +10,5 @@ void func(int n ) {
 
 func(3);
 O/P: 1, 2, 3
+
+Head recursions can not be converted into the loop as it is. it can be converted with some additional code, bt not as it is!
