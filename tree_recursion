@@ -1,0 +1,4 @@
+If the function is calling itself more than one time, then it is a tree recursion 
+Total number of function calls are O(2^n)
+= 2^n+1 - 1 Geometric progression 
+
