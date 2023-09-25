@@ -1,0 +1,11 @@
+Head recursion:
+There is not statement before the function call 
+It has to do everything at returning time.
+void func(int n ) {
+  if (n > 0) {
+    func(n-1);
+    printf("\n%d", n);
+  }
+}
+
+func(3);
