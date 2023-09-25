@@ -14,3 +14,10 @@ void  func(int n)
 }
 
 func(3);
+
+If tail recursion, it is better to write loop becuse loop is more efficient in terms of space.
+
+In recursion, in above example, 4 activation records will be created and for loop only one activation record will be created. 
+Hence, space complexity dor recursion = O(n) and for loop it is O(1)
+
+But some compilers are intelligent enough to convert it into loop.
