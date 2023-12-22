@@ -1,3 +1,26 @@
 // transitivity
 
 A --> B --> C --> A
+// Online C compiler to run C program online
+#include <stdio.h>
+
+void funB(int b) {
+    if (b >1) {
+        printf("In funB b=%d\n", b);
+        funA(b);
+    }
+}
+
+void funA(int a) {
+    if (a > 1) {
+        printf("In funA a=%d\n", a);
+        funB(a/2);
+    }
+}
+
+int main() {
+    // Write C code here
+    funA(10);
+
+    return 0;
+}
