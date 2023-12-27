@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int fact(int n) {
+    if (n == 1) {
+        return 1;
+    } else {
+        return n*fact(n-1);
+    }
+}
+
+int main() {
+    // Write C code here
+    int f = fact(5);
+    printf("\nFact of 5 = %d", f);
+    return 0;
+}
